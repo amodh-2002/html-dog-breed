@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lost And Found</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/dog-1.png" />
+    <link href="./dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <div class="mb-10">
+      <nav
+        class="sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="../assets/logo-paw.jpeg" class="h-8 bg-transparent" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap">
+              PupSpectrum
+            </span>
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  exact
+                  href="#"
+                  class="cursor-pointer block py-2 px-3 text-black bg-blue-700 rounded md:bg-transparent md:text-[#FF7F50] md:p-0 md:dark:text-[#FF7F50]"
+                  aria-current="page"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="emergency.html"
+                  target="_blank"
+                  class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FF7F50] md:p-0 md:dark:hover:text-[#FF7F50] dark:hover:bg-[#FF7F50] dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  Emergency
+                </a>
+              </li>
+              <li>
+                <a
+                  href="lostandfound.html"
+                  class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FF7F50] md:p-0 md:dark:hover:text-[#FF7F50] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  target="_blank"
+                >
+                  Lost & Found
+                </a>
+              </li>
+              <li>
+                <a
+                  href="petspots.html"
+                  class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FF7F50] md:p-0 md:dark:hover:text-[#FF7F50] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  target="_blank"
+                >
+                  Pet Spots
+                </a>
+              </li>
+              <li>
+                <a
+                  href="trainingvideo.html"
+                  class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FF7F50] md:p-0 md:dark:hover:text-[#FF7F50] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  target="_blank"
+                >
+                  Training Videos
+                </a>
+              </li>
+              <li>
+                <a
+                  href="dogmarketplace.html"
+                  class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FF7F50] md:p-0 md:dark:hover:text-[#FF7F50] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  target="_blank"
+                >
+                  Dog Marketplace
+                </a>
+              </li>
+              <li>
+                <a
+                  to="/chatbot"
+                  class="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FF7F50] md:p-0 md:dark:hover:text-[#FF7F50] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  target="_blank"
+                >
+                  Chatbot
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- navbar ends -->
+    <!-- main body start -->
+    <div class="container mx-auto my-10 mb-10">
+      <h1
+        class="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-[#8B4513] to-[#FF7F50] text-transparent bg-clip-text"
+      >
+        Lost and Found
+      </h1>
+
+      <div class="bg-white p-8 rounded-lg shadow-md flex items-center gap-14">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <img src="assets/qrcode.png" alt="" />
+        </div>
+        <div class="w-1/2">
+          <h2 class="text-2xl font-bold mb-4">Dog Information</h2>
+          <p><span class="font-semibold">Name:</span> Buddy</p>
+          <p><span class="font-semibold">Breed:</span> Golden Retriever</p>
+          <p><span class="font-semibold">Owner:</span> Sai Gaurav P</p>
+          <p><span class="font-semibold">Contact:</span> +91 7194101101</p>
+          <p><span class="font-semibold">Status:</span> Lost</p>
+        </div>
+        <div class="w-1/2">
+          <h2 class="text-2xl font-bold mb-4">Last Seen Location is Here:</h2>
+          <p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0370843936744!2d77.50938912585593!3d12.84088016772917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae40f716f6495b%3A0xb9d12e9452b7a883!2sJyothy%20Institute%20Of%20Technology%2C%20Bengaluru%2C%20Thathaguni%2C%20Karnataka%20560062!5e0!3m2!1sen!2sin!4v1714923936308!5m2!1sen!2sin"
+              width="300"
+              height="200"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <h2 class="text-2xl font-bold mb-4">Additional Information</h2>
+        <p>
+          If you have found a dog matching this description, please contact the
+          owner immediately. Your help is greatly appreciated.
+        </p>
+      </div>
+    </div>
+    <!-- main body end -->
+    <!-- footer starts-->
+    <div class="mx-auto pt-20">
+      <footer class="bg-black shadow">
+        <div
+          class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+        >
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            © 2024
+            <a href="/" class="hover:underline"> PupSpectrum </a>
+            . All Rights Reserved.
+          </span>
+          <ul
+            class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+          >
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6"> About </a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6"> Licensing </a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <!-- footer ends-->
+  </body>
+</html>
